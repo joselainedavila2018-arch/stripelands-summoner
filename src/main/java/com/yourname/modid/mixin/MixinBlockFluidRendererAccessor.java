@@ -5,10 +5,13 @@ import net.minecraft.client.renderer.BlockFluidRenderer;
 import net.minecraft.client.renderer.color.BlockColors;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.gen.Accessor;
 import org.spongepowered.asm.mixin.gen.Invoker;
 
+@SideOnly(Side.CLIENT)
 @Mixin(BlockFluidRenderer.class)
 public interface MixinBlockFluidRendererAccessor {
 

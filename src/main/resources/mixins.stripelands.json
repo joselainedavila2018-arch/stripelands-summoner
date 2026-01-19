@@ -9,7 +9,8 @@
     "MixinBlockFluidRendererAccessor",
     "MixinBlockModelRenderer",
     "MixinBlockModelRendererAccessor",
-    "MixinRenderChunk"
+    "MixinRenderChunk",
+    "MixinRenderChunkAccessor"
   ],
   "server": []
 }

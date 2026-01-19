@@ -12,8 +12,11 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.IBlockAccess;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 import org.spongepowered.asm.mixin.*;
 
+@SideOnly(Side.CLIENT)
 @Mixin(BlockFluidRenderer.class)
 public class MixinBlockFluidRenderer {
     @Shadow @Final private final TextureAtlasSprite[] atlasSpritesLava = new TextureAtlasSprite[2];
